@@ -39,7 +39,7 @@ roots = []
 discriminant = coefficients.get('B') ** 2 - 4 * coefficients.get('A') * coefficients.get('C')
 
 if coefficients.get('A') == 0 and coefficients.get('B') == 0 and coefficients.get('C') == 0:
-    print("Уравнение имеет бесконечное количество корней0")
+    print("Уравнение имеет бесконечное количество корней")
 elif coefficients.get('A') == 0 and coefficients.get('B') == 0:
     printRoots(roots)
 elif coefficients.get('A') == 0:
