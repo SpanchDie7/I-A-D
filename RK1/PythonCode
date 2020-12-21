@@ -1,9 +1,22 @@
-from colorama import Fore
-from operator import itemgetter
-from RK1.classBrowserComputer import BrowserComputer
-from RK1.ClassBrowser import Browser
-from RK1.ClassComputer import Computer
+class Browser:
 
+    def __init__(self, id, name, size, computer_id):
+        self.id = id
+        self.name = name
+        self.size = size
+        self.comp_id = computer_id
+        
+class Computer:
+
+    def __init__(self,id,name):
+        self.id = id
+        self.name = name
+        
+class BrowserComputer:
+
+    def __init__(self, computer_id, browser_id):
+        self.computer_id = computer_id
+        self.browser_id = browser_id
 
 Computers = [
     Computer(1, 'computer1'),
@@ -57,7 +70,7 @@ def main():
 
     print('\033[34m1st Task')
     res1={}
-   # res = list(filter(lambda i: i[0].startswith('A'), one_to_many))
+  
 
     for d in Browsers:
         if 'A' == d.name[0]:
