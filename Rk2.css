@@ -1,0 +1,10 @@
+.head{
+    color:brown; 
+  font-size: 34px ; 
+  font-family: Arial Black;
+  
+}
+.cap{font-style: italic;}
+
+li:nth-child(n){color: black; background:brown}
+li:nth-child(2n){color:brown; background: black;}
